@@ -1,0 +1,1421 @@
+HTML CODES
+
+Index.html
+
+<html>
+<head>
+<title>
+login page
+</title>
+<frameset rows="13%,*" >
+        <frame src="main_top.html" name="a"  noresize>
+        <frame src="user_admin.html" name="b"  noresize>
+</frameset>
+</head>
+<body>
+</body>
+</html>
+
+
+
+main_top.html
+
+<html>
+<head>
+</head>
+<body bgcolor="white"> 
+<marquee BEHAVIOR=ALTERNATE scrollamount="5"><img src="img/Student_Messengr.png" width=412 height=68></font> </marquee>
+<a href="developers.html" target="_top">Developers Edge</a>
+</body>
+</html>
+
+
+user_admin.html
+
+<html>
+<body background="img/bg.png">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center><h2><a href="user_index.html" target="_top">users</a>
+<br>
+<a href="admin_index.html" target="_top">administrator</a>
+<center></h2>
+</body>
+</html>
+
+main_login.html
+
+<head>
+</head>
+<body background="wall.PNG"><center>
+
+<font color="white">
+<br>
+<br>
+<br>
+<br>
+<br>
+<table>
+<form method="get"  action="login_check.php"target="_top">
+<tr><td>User Name:</td><td> <input type="text" name="username"></td></tr>
+<tr><td>Password:</td><td> <input type="password" name="password" ></td></tr>
+<tr></tr>
+<tr></tr>
+<tr colspan=2><td></td><td><center><input type="submit" value="submit"></center></td></tr>
+</form>
+</table>
+<?php
+echo $_POST[username];
+echo $_POST[password];
+?>
+Don't have a user id? 
+<a href="register.html" target="_top">register now</a>
+<p>Forgot password???
+<a href="forgot_password.html" target="b">click here</a>
+</font>
+</center>
+</body>
+</html>
+
+
+home_tasks.html
+
+<html>
+<head>
+</head>
+<body background="img/frame.png" link="black"> 
+<div align=left>
+<a href="home_welcome.php" target="c">My Home</a><br><br>
+<a href="compose_mail.html" target="c">Compose mail</a><br><br>
+<a href="inbox.php" target="c">Inbox</a><br><br>
+<a href="sent_box.php" target="c">Sent box</a><br><br>
+<a href="contacts.php" target="c">Contacts</a><br><br>
+<a href="online_cht.php" target="c">Online Chat</a><br><br>
+<a href="forum.html" target="_top">Forums</a><br><br>
+<a href="reports.html" target="c">Report an user</a><br><br>
+</div>
+</body>
+</html
+
+compose_mail.html
+
+<html>
+<head>
+</head>
+<body ><img src="img/smiley-write.jpg" width=146 height=122><center>
+<br>
+<font size=4>
+Just enter the TO ADDRESS, SUBJECT, COMPOSE your mail in the "Compose" box and hit the send button.</font>
+<br><br><br>
+<form method="post" action="compose_mail.php"target="c">
+To :<input type="text" name="to_address" size=50><br><br>
+
+Subject :<input type="text" name="subject" size=60><br><br><br><br>
+<font size=5><i>Compose your message here:</i></font><br>
+<textarea rows="16" cols="90" name="msg_body"></textarea>
+<br><br><br>
+<input type="submit" value="SEND">
+</center>
+</body>
+</html>
+
+
+forum_home.html
+
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+</head>
+<body>
+<center><h2>Student Messenger forum</h2></center>
+<h4><a href=home.html target="_top">Go back</a></h4>
+<table border="0" cellpadding="3" cellspacing="0" width="100%">
+	<tr>   <td colspan="6" bgcolor="#6e6f7b"><font color="#ffffff">&nbsp;Topics</font></td> </tr>
+	<tr>
+		<td bgcolor="#ffffff"><font color="#000000"><a href="./forum_deptqna.php?dept=1">CSIT</a>&nbsp;</font></td>
+ 	</tr>
+	<tr><td colspan="3" bgcolor="#ffffff"><font color="#000000">A forum where any question is about CS & IT.</font></td></tr>
+
+	<tr>
+		<td bgcolor="#eeeeee"><font color="#000000"><a href="./forum_deptqna.php?dept=2">ECE</a>&nbsp;</font></td>
+	</tr>
+	<tr> <td colspan="3" bgcolor="#eeeeee"><font color="#000000">A forum to talk about your ELECTRONICS..</font></td></tr>
+
+	<tr>
+		<td bgcolor="#ffffff"><font color="#000000"><a href="./forum_deptqna.php?dept=3">EEE</a>&nbsp;</font></td>
+	</tr>
+ 	<tr><td colspan="3" bgcolor="#ffffff"><font color="#000000">A discussion forum for Electrical Engineers.</font></td>	</tr>
+
+	
+	<tr>
+		<td bgcolor="#eeeeee"><font color="#000000"><a href="./forum_deptqna.php?dept=4">Mech.</a>&nbsp;</font></td>
+	</tr>
+	<tr> <td colspan="3" bgcolor="#eeeeee"><font color="#000000">A forum to talk about your Mech ideas.</font></td></tr>
+
+	<tr>
+		<td bgcolor="#ffffff"><font color="#000000"><a href="./forum_deptqna.php?dept=5">EIE</a>&nbsp;</font></td>
+	</tr>
+
+ 	<tr><td colspan="3" bgcolor="#ffffff"><font color="#000000">A forum for instrumentation Engineers.</font></td>	
+</tbody></table></body></html>
+
+
+reports.html
+
+<html>
+<head>
+</head>
+<body><center>
+<br>
+<br>
+<br>
+<br>
+<font size=5>Enter the user id of the user who is offensive
+<form method="post" action="reports.php">
+User id: <input type="text" name="user">
+<br>
+Subject :<input type="text" name="subject" size=60><br><br><br>
+
+
+Reason:
+<br><textarea rows="9" cols="70" name="reason"></textarea>
+
+<br>
+<input type="submit" value="Report">
+</form>
+</body>
+</html>
+
+edit_profile.html
+
+<html>
+<body><center>
+<font size=5>Select the data field to edit...</font>
+<br><br><br><br>
+<form method="post" action="edit_profile.php">
+Field:
+<select name="field"> 
+	<option value="" selected>Select field</option>
+	<option value='password'>password</option>
+	<option value='fname'>firstname</option>
+	<option value='lname'>lastname</option>
+	<option value='address'>address</option>
+	<option value='state'>state</option>
+	<option value='country'>country</option>
+</select>
+<input type="text" name="field_value">
+<input type="submit" value="modify">
+</form>
+<a href="home.html">Back</a>
+</center>
+</body>
+</html>
+admin_tasks.html
+
+<html>
+<br>
+<br>
+
+<body bgcolor="#6495EF" link="black">
+<div align=left>
+<font size=5>
+<a href="admin_view_users.php" target="c">View users</a><br><br>
+<a href="admin_reports.php" target="c">View reports</a><br><br>
+<a href="admin_ban_users.html" target="c">Ban users</a><br><br>
+</font>
+</div>
+</body>
+</html/html>
+
+
+admin_ban_users.html
+
+<html>
+<head>
+</head>
+<body><center>
+<font size=5>Enter the user id to delete..</font>
+<form method="post" action="admin_ban_users.php">
+<input type="text" name="user">
+<input type="submit" value="delete">
+</form>
+</center>
+</body>
+</html>
+
+
+register.html
+
+<html>
+<head>
+</head>
+<body bgcolor="Bisque"><center>
+<br>
+<font size=7 color="DarkRed">Student Messenger Registration</font>
+<p>
+<br>
+<form method="post" action="register.php"target="_top">
+<div align="left"><font size=5 color="SeaGreen ">Personal information</font></div>
+<br>
+First name :<input type="text" name="first_name">
+
+<p>
+Last name :<input type="text" name="last_name">
+<p>
+Sex :
+<select name="sex"> 
+<option value="" selected> Gender </OPTION>
+<OPTION value='male'>male</option>
+<OPTION value='female'>female</option>
+</select>
+<p>
+
+
+Birthday :
+<select name="day"> 
+<option value="" selected> select date </OPTION>
+<OPTION value=1>1</option>
+<OPTION value=2>2</option>
+<OPTION value=3>3</option>
+<OPTION value=4>4</option>
+<OPTION value=5>5</option>
+<OPTION value=6>6</option>
+<OPTION value=7>7</option>
+<OPTION value=8>8</option>
+<OPTION value=9>9</option>
+<OPTION value=10>10</option>
+<OPTION value=11>11</option>
+<OPTION value=12>12</option>
+<OPTION value=13>13</option>
+<OPTION value=14>14</option>
+<OPTION value=15>15</option>
+<OPTION value=16>16</option>
+<OPTION value=17>17</option>
+<OPTION value=18>18</option>
+<OPTION value=19>19</option>
+<OPTION value=20>20</option>
+<OPTION value=21>21</option>
+<OPTION value=22>22</option>
+<OPTION value=23>23</option>
+<OPTION value=24>24</option>
+<OPTION value=25>25</option>
+<OPTION value=26>26</option>
+<OPTION value=27>27</option>
+<OPTION value=28>28</option>
+<OPTION value=29>29</option>
+<OPTION value=30>30</option>
+<OPTION value=31>31</option>
+</select>
+
+
+
+<select name="month"> 
+<option value="" selected> select month </OPTION>
+<OPTION value=1>jan</option>
+<OPTION value=2>feb</option>
+<OPTION value=3>mar</option>
+<OPTION value=4>apr</option>
+<OPTION value=5>may</option>
+<OPTION value=6>jun</option>
+<OPTION value=7>jul</option>
+<OPTION value=8>aug</option>
+<OPTION value=9>sept</option>
+<OPTION value=10>oct</option>
+<OPTION value=11>nov</option>
+<OPTION value=12>dec</option>
+</select>
+
+
+<input type="text" name="year">(year)<p>
+
+Address :<input type="text"  name="address" size="50" ><p>
+
+
+state : 
+<select name="state"> 
+<option value="" selected> select state </OPTION>
+<OPTION value="Andhra pradesh">Andhra Pradesh</option>
+<OPTION value="Arunachal Pradesh">Arunachal Pradesh</option>
+<OPTION value="Assam">Assam</option>
+<OPTION value="Bihar">Bihar</option>
+<OPTION value="chhattisgarh">chhattisgarh</option>
+<OPTION value="Goa">Goa</option>
+<OPTION value=Gujarat>Gujarat</option>
+<OPTION value=Haryana>Haryana</option>
+<OPTION value=Himachal_Pradesh>Himachal Pradesh</option>
+<OPTION value=Jammu and Kashmir>Jammu and Kashmir</option>
+<OPTION value=Jharkhand>Jharkhand</option>
+<OPTION value=Karnataka>Karnataka</option>
+<OPTION value=Kerala>Kerala</option>
+<OPTION value=Madhya Pradesh>Madhya Pradesh</option>
+<OPTION value=Maharashtra>Maharashtra</option>
+<OPTION value=Manipur>Manipur</option>
+<OPTION value=Meghalaya>Meghalaya</option>
+<OPTION value=Mizoram>Mizoram</option>
+<OPTION value=Nagaland>Nagaland</option>
+<OPTION value=Orissa>Orissa</option>
+<OPTION value=Punjab>Punjab</option>
+<OPTION value=Rajasthan>Rajasthan</option>
+<OPTION value=Sikkim>Sikkim</option>
+<OPTION value=Tamil Nadu>Tamil Nadu</option>
+<OPTION value=Tripura>Tripura</option>
+<OPTION value=Uttar Pradesh>Uttar Pradesh</option>
+<OPTION value=Uttarakhand>Uttarakhand</option>
+<OPTION value=West Bengal>West Bengal</option>
+</select>
+<br>
+<br>
+Country :<input type="text"  name="country" ><p>
+Zipcode :<input type="text"  name="zipcode" ><p>
+Branch :<input type="text"  name="branch" ><p>
+
+<br>
+<div align="left"><font size=5 color="SeaGreen ">Select an id and password</font></div><br>
+User id :<input type="text"  name="user_id" size="35"><p>
+Password:<input type="password" name="password" size="35"><p>
+Confirm Password :<input type="password"  name="con_password" size="35"><p>
+
+
+<br>
+<br>
+<input type="submit" value="create my account">
+
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PHP CODES
+
+
+login_check.php
+
+<?php
+$servername='localhost';  // hostname or ip of server
+$mysql_login="a310"; // username and password to log onto db server
+$mysql_password="a310";
+$dbname='a310';  // name of database
+function connecttodb($servername,$dbname,$mysql_login,$mysql_password)
+{
+	global $link;
+	$link=mysql_connect ("$servername","$mysql_login","$mysql_password");
+	if(!$link){die("Could not connect to MySQL");}
+		mysql_select_db("$dbname",$link) or die ("could not open db".mysql_error());
+}
+connecttodb($servername,$dbname,$mysql_login,$mysql_password);
+session_start();
+$username=$_REQUEST['username'];
+$pass=$_REQUEST['password'];
+$res=mysql_query("select user_id, password from users where user_id='$username' and password='$pass'");
+$rows=mysql_num_rows($res);
+if($rows>0)
+{
+	?>
+	<script>
+		document.location="home.html";
+	</script>
+	<?php
+	$_SESSION['username']=$user=$_REQUEST['username'];
+	$password=$_REQUEST['password'];
+	mysql_query("UPDATE users SET status=1 WHERE user_id='$user'");
+}
+else
+{
+	?>
+	<script>
+		alert("invalid username or password. Please enter again");
+		document.location="index.html";
+	</script>
+	<?php
+}
+mysql_close($con);
+?>
+
+
+
+top.php
+
+<html>
+<head>
+</head>
+<body bgcolor="white"> 
+<marquee BEHAVIOR=ALTERNATE scrollamount="5"><img src="img/Student_Messengr.png" width=412 height=68></font> </marquee>
+<table width=100%>
+<tr>
+<td><a href="developers.html" target="_top">Developers Edge</a> </td><td></td><td></td><td></td><td></td>
+<td><div align="right"><a href="home.html" target="_top"><?PHP session_start(); Echo $_SESSION['username']; ?></a>
+<a href="logout.php" target="_top">logout</a>
+<a href="view_profile.php" target="_top">view profile</a></div></td>
+</tr>
+</table>
+</body>
+</html>
+
+
+
+home_welcome.php
+
+<html>
+<head>
+</head>
+<body> 
+<br>
+<br>
+<br>
+<br>
+<br><h1>Hi 
+<?php
+session_start();
+echo$_SESSION['username'];
+?><img src="img/smiley-face-flat.png" width=50 height=50>
+</h1>
+<h2>Welcome to student messenger.</h2><h3>Click one of the links from the left pane to perform tasks.</h3>
+</body>
+</html>
+
+
+
+compose_mail.php
+
+<?php
+session_start();
+$con=mysql_connect("localhost","a310","a310");
+$c=mysql_select_db("a310");
+$toaddr=$_POST['to_address'];
+$fromaddr=$_SESSION['username'];
+$sub=$_POST['subject'];
+$tex=$_POST['msg_body'];
+$t=mysql_query("select user_id from users where user_id ='$toaddr'");
+$f=mysql_query("select user_id from users where user_id ='$fromaddr'");
+$tr=mysql_num_rows($t);
+$tf=mysql_num_rows($f);
+if($tr==0)
+{
+	?>
+	<script>
+	alert("to address does not exist..");
+	document.location="compose_mail.html";
+	</script>
+	<?php
+}
+else if($tf==0)
+{
+	?>
+	<script>
+	alert("from address does not exist..");	
+	document.location="compose_mail.html";
+	</script>
+	<?php
+}
+else
+{
+	$suc=mysql_query("insert into messages (receiver_id,sender_id,msg_sub,msg_body) values('$toaddr','$fromaddr','$sub','$tex')");
+
+	if($suc)	
+	{	
+		ECHO "<script>";              //here we are sending toaddress to another document 
+		ECHO "document.location=\"compose_mail_success.php?toaddr= $toaddr\"";
+		ECHO "</script>";
+	?>
+		<?php
+	}
+	else
+	{
+		?>
+		<script>
+		alert("mail cannot be send");
+		</script>
+		<?php
+	}
+}
+mysql_close($con);
+?>
+
+
+inbox.php
+
+<html>
+<head>
+</head>
+<body>
+<br>
+
+<?php
+$con=mysql_connect("localhost", "a310", "a310");
+$c=mysql_select_db("a310");
+if(isset($_POST['submit'])) //checking if the form is submitted or not. 
+{ 
+
+	$box=$_REQUEST['box'];
+    echo "You have successfully deleted the selected mails!!! <br>";
+	//echo" your inbox has " 
+    foreach($box as $key=>$value)
+		$result=mysql_query("DELETE from messages where msg_id='$value' "); 
+}
+?>
+<form method="post" action="inbox.php" target="c">
+<font color="#ffffff">
+<table align=left height=70 width=100% style='border-collapse: collapse' >
+<tr>
+        <td bgcolor="#6e6f7b"  width="10"></td>
+        <td bgcolor="#6e6f7b"  width="20">From</td>
+        <td bgcolor="#6e6f7b" width="120">Subject</td>
+        <td bgcolor="#6e6f7b"  width="120">Date and Time</td>
+</tr>
+</font>
+<?php
+
+//$user=$_COOKIE["session_id"];
+session_start();
+$user=$_SESSION['username'];
+$res=mysql_query("select * from messages where receiver_id='$user' order by msg_time desc"); //changed by me
+
+echo "<p><P>";
+$num=mysql_num_rows($res);
+$check="checkbox";
+$color1="#ffffff";
+$color2="#eeeeee";
+$nowrap="nowrap";
+
+for($i=0;$i<$num;$i++)
+{
+        $row=mysql_fetch_array($res);
+	   if($i%2){
+          echo "<tr>
+                  <td bgcolor=$color1 nowrap=$nowrap width=10><input type=$check  name=box[] value=$row[0]></td> 
+                  <td bgcolor=$color1 nowrap=$nowrap width=20>$row[2]</td> 
+                  <td bgcolor=$color1 nowrap=$nowrap width=120><a href=mail_content.php?msg_id=$row[0]>$row[4]</a></td> 
+                        <td bgcolor=$color1 nowrap=$nowrap width=120>$row[5]</td></tr> ";
+        }else{
+                 echo "<tr>
+                        <td bgcolor=$color2 nowrap=$nowrap width=10><input type=$check name=box[] value=$row[0] ></td> 
+                        <td bgcolor=$color2 nowrap=$nowrap width=20>$row[2]</td> 
+                        <td bgcolor=$color2 nowrap=$nowrap width=120><a href=mail_content.php?msg_id=$row[0]>$row[4]</a></td> 
+                        <td bgcolor=$color2 nowrap=$nowrap width=120>$row[5]</td></tr> ";
+
+        }
+
+}
+
+?>
+
+</table>
+<DIV STYLE="POSITION:ABSOLUTE; LEFT:30; TOP:300">
+<input type="submit"  name="submit" value="delete">
+</div>
+</form>
+<div  STYLE="POSITION:ABSOLUTE; LEFT:30; TOP:400"><img src="img/u14366930.jpg"></div>
+</body>
+</html>
+
+
+
+contacts.php
+
+<html>
+<head>
+</head>
+<body>
+<h1>Your friends list:</h1>
+<div style="position:absolute; top=33"><hr color="blue"></div>
+<table  width=600 height=10 style='border-collapse: collapse'>
+<?php
+$con=mysql_connect("localhost", "a310", "a310");
+$c=mysql_select_db("a310");
+
+session_start();
+$user=$_SESSION['username'];
+if(isset($_POST['Add'])) //checking if the form is submitted or not. 
+{ 
+
+	$contactt=$_POST["contact"];
+	$res=mysql_query("select user_id from users where user_id='$contactt'");
+	$num=mysql_num_rows($res);
+	if($num>0)	
+	{
+		echo "You have successfully added your friends!!! <br>";
+		$result=mysql_query("INSERT INTO contacts VALUES('$user','$contactt') "); 
+	}
+	else
+	{
+		?>
+		<script>
+		alert("user_id doesnot exist..");
+		document.location="contacts.php";
+		</script>
+		<?php
+	}
+
+}
+if(isset($_POST['delete'])) //checking if the form is submitted or not. 
+{ 
+
+	$box=$_REQUEST['box'];
+    echo "You have successfully deleted the selected mails!!! <br>";
+	//echo" your inbox has " 
+    foreach($box as $key=>$value) echo "<br>";
+	$result=mysql_query("DELETE from contacts where contact_id='$value' "); 
+}
+
+
+function getfname($user_id)
+{
+	$restult=mysql_query("select fname from users where user_id='$user_id'"); //changed by me
+	$row1=mysql_fetch_array($restult);
+	return $row1[0];
+}
+function getlname($user_id)
+{
+	$restult=mysql_query("select lname from users where user_id='$user_id'"); //changed by me
+	$row1=mysql_fetch_array($restult);
+	return $row1[0];
+}
+
+
+$res=mysql_query("select * from contacts where user_id='$user'"); //changed by me
+
+echo "<p><P>";
+$num=mysql_num_rows($res);
+$color1="#6e6eeg";
+$color2="#eeeeee";
+$nowrap="nowrap";
+echo "<tr ><td bgcolor=$color1></td><td  bgcolor=$color1>First Name</td><td bgcolor=$color1>Last Name</td><td  bgcolor=$color1>User id</td></tr>";
+?>
+<form method="post"  action="contacts.php" target="c"> 
+<?php ;//it is here for collecting check box values
+for($i=0;$i<$num;$i++)
+{
+        $row=mysql_fetch_array($res);
+		$fname=getfname($row[1]);
+		$lname=getlname($row[1]);
+	    echo "<tr>
+				<td width=10><input type=\"checkbox\"  name=box[] value=$row[1]></td> 
+		<td>$fname</td><td>$lname</td><td>$row[1]</td>";/*<td><form method=\"post\" 	action=\"compose_mail.html\" target=\"c\"><input type=\"submit\" value=\"send mail\"></form></td></tr> ";*/
+}
+?>
+<tr><td><input type="submit" name="delete" value=" Delete "></td></tr>
+</form>
+</table> 
+
+<font size=5>
+<br>To add a new contact
+enter user name of your friend<br></font>
+<form method="post"  action="contacts.php" target="c"> 
+
+<br>User Name: <input type="text" name="contact"> 
+<input type="submit" name="Add" value=" Add ">
+</form>
+<img src="img/cartoon_friends.gif">
+</body>
+</html>
+
+
+
+online_cht.php
+
+<html>
+<head>
+</head>
+<body>
+<h1>Your Online  friends:</h1>
+<div style="position:absolute; top=33"><hr color="blue"></div>
+<table  width=600 height=10 style='border-collapse: collapse'>
+<?php
+$con=mysql_connect("localhost", "a310", "a310");
+$c=mysql_select_db("a310");
+session_start();
+$user=$_SESSION['username'];
+function getfname($user_id)
+{
+	$restult=mysql_query("select fname from users where user_id='$user_id'"); //changed by me
+	$row1=mysql_fetch_array($restult);
+	return $row1[0];
+}
+function getlname($user_id)
+{
+	$restult=mysql_query("select lname from users where user_id='$user_id'"); //changed by me
+	$row1=mysql_fetch_array($restult);
+	return $row1[0];
+}
+
+$res=mysql_query("select * from contacts where user_id='$user'"); //changed by me
+echo "<p><p>";
+$num=mysql_num_rows($res);
+$color1="#6e6eeg";
+$color2="#eeeeee";
+$nowrap="nowrap";
+echo "<table width=600 height=10 style='border-collapse: collapse'>";
+echo "<tr><td  bgcolor=$color1>First Name</td><td bgcolor=$color1>Last Name</td><td  bgcolor=$color1>User id</td></tr>";
+
+//it is here for collecting check box values
+for($i=0;$i<$num;$i++)
+{
+	
+	    $row=mysql_fetch_array($res);
+		$fname=getfname($row[1]);
+		$lname=getlname($row[1]);
+		$checkStatus=mysql_query("select status from users where status=1 and user_id='$row[1]'");
+	    $row1=mysql_fetch_array($checkStatus);
+		if($row1)
+		echo "<tr>	<td>$fname</td>
+			<td>$lname</td>
+			<td><a href=online_chtbox.php?cht_user=$row[1] target=\"_blank\">$row[1]</a></td> </tr>";
+}
+?>
+</table> 
+<font size=5>
+<br>
+<img src="img/Big_Smil1.gif">
+
+</body>
+</html>
+
+
+
+online_chtbox.php
+
+<html>
+<head>
+<frameset rows="70%,*">
+<?php
+$user=$_REQUEST['cht_user'];
+session_start();
+$_SESSION['receiver_id']=$user;
+?>
+<frame src="online_chtbox_frame1.php" noresize>
+<frame src="online_chtbox_frame2.php" noresize>
+<title><?php echo $user ?></title>
+</head>
+<body>
+</body>
+</html>
+
+
+
+online_chtbox_frame1.php
+
+<html>
+<head>
+<meta http-equiv="refresh" content="1">
+</head>
+<body>
+<?php
+session_start();
+$con=mysql_connect("localhost","a310","a310");
+$c=mysql_select_db("a310");
+$sender_id=$_SESSION['username'];
+$receiver_id=$_SESSION['receiver_id'];
+
+$res=mysql_query("select *from chat where (receiver_id='$sender_id' or receiver_id='$receiver_id') and (sender_id='$sender_id' or sender_id='$receiver_id') order by msgtime");
+$num=mysql_num_rows($res);
+
+for($i=0;$i<$num;$i++)
+{
+	$row=mysql_fetch_array($res);
+	if($row[0]==$sender_id)
+		$color="green";
+	else
+		$color="red";
+	echo "<font color='$color'>$row[0]</font> : $row[2]<br>";
+}
+
+?>
+</body>
+</html>
+
+
+
+online_chtbox_frame2.php
+
+
+<html>
+<head>
+</head>
+<body>
+<form method="post" action="online_chtbox_frame2.php">
+<textarea rows=6 cols=50 name="msg"></textarea>
+<input type="submit" value="Post Scrap">
+</form>
+
+<?php
+
+if(isset($_REQUEST["msg"]))
+{
+	session_start();
+	$con=mysql_connect("localhost","a310","a310");
+	$c=mysql_select_db("a310");
+	$sender_id=$_SESSION['username'];
+	$receiver_id=$_SESSION['receiver_id'];
+	$msg=$_POST['msg'];
+
+	$res=mysql_query("insert into chat (sender_id,receiver_id,msg) values('$sender_id','$receiver_id','$msg')");
+}
+?>
+
+</body>
+</html>
+
+
+
+forum_deptqna.php
+
+<html>
+<head>
+</head>
+<body>
+<h2>Student Messenger forum</h2>
+<h4><a href=forum_home.html>forum home</a></h4>
+<h4><a href=forum_newpost.php?dept=<?php echo $_REQUEST["dept"];?> >NEW QUESTION ? click me</a></h4>
+<table border="0" cellpadding=1 cellspacing="0" width="100%">
+
+	   <tr>
+    		<td colspan="2" bgcolor="#6e6f7b"><font color="#ffffff">&nbsp;Threads</font></td>
+    		<td bgcolor="#6e6f7b" nowrap="nowrap" width="120"><font color="#ffffff">Author&nbsp;</font></td>
+   		<td bgcolor="#6e6f7b" nowrap="nowrap" width="80"><font color="#ffffff">Replies&nbsp;</font></td>
+  		<td bgcolor="#6e6f7b" nowrap="nowrap" width="120"><font color="#ffffff">Last Post</font></td>
+	   </tr>
+	   
+<?php
+$con=mysql_connect("localhost", "a310", "a310");
+$c=mysql_select_db("a310");
+//to show questions in a department = fid////
+$fid=$_REQUEST["dept"];
+echo "$fid is the department no";
+$res=mysql_query("select user_id,post_title,post_time,type,post_id from topic_post where fid='$fid' and type='q'
+ORDER BY  post_time DESC");
+$num=mysql_num_rows($res);
+$color1="#ffffff";
+$color2="#eeeeee";
+$dept=$_REQUEST["dept"];
+function replies ($msg_title)
+{
+	$r=mysql_query("select count(post_title) from topic_post where post_title='$msg_title'");
+	$r=mysql_fetch_array($r);
+	return $r[0];
+}
+
+for($i=0;$i<$num;$i++)
+{
+       $row=mysql_fetch_array($res);
+	   $nor=replies($row[1]);
+	   if($i%2)
+	   {   
+	   	echo "<tr>
+		<td bgcolor=$color1>&nbsp;</td>
+		<td bgcolor=$color1><a href=./forum_viewpost.php?post_id=$row[4]&dept=$dept>$row[1]</a>&nbsp;</td>
+ 		<td bgcolor=$color1  width=120>$row[0]&nbsp;</td>
+ 		<td bgcolor=$color1  width=80>&nbsp;$nor</td>
+ 		<td bgcolor=$color1  width=120>$row[2]&nbsp;</td>
+	   </tr>";
+
+	  }else{
+	  echo "<tr>
+		 <td bgcolor=$color2>&nbsp;</td>
+		 <td bgcolor=$color2><a href=./forum_viewpost.php?post_id=$row[4]&dept=$dept>$row[1]</a>&nbsp;</font></td>
+ 		 <td bgcolor=$color2 width=120>$row[0]&nbsp;</td>
+ 		 <td bgcolor=$color2  width=80>&nbsp;$nor</td>
+ 		 <td bgcolor=$color2  width=120>$row[2]&nbsp;</td>
+	  </tr>";
+	  }
+}
+?>
+</table>
+</body>
+</html>
+
+
+
+forum_viewpost.php
+
+<h4><a href=forum_home.html>forum home</a></h4>
+
+<?php
+session_start();
+$con=mysql_connect("localhost", "a310", "a310");
+$c=mysql_select_db("a310");
+$post_id=$_REQUEST["post_id"];
+if(isset($_REQUEST['reply']))
+{
+	$dept=$_REQUEST["dept"];
+	$username=$_SESSION['username'];
+	$msg_body=$_REQUEST["msg_body"];
+	$title=$_REQUEST["title"];
+	$res=mysql_query("insert into topic_post(user_id,fid,post_text,type,post_title)
+				  values('$username',$dept,'$msg_body','r','$title')");
+			
+	if($res>0)
+	{
+		?>
+		<script>
+			document.location="forum_viewpost.php?post_id=<?php echo $post_id; ?>";
+		</script>
+		<?php
+	}
+}
+//to show questions in a department = fid////
+//$post_id=$_REQUEST["post_id"];
+$res=mysql_query("select post_title from topic_post where post_id='$post_id'");
+$row=mysql_fetch_array($res);
+$title=$row[0];
+
+$res=mysql_query("select user_id,post_text,post_title,post_time,type from topic_post where post_title='$title'");
+$num=mysql_num_rows($res);
+
+$color1="#ffffff";
+$color2="#eeeeee";
+?>
+
+<?php
+for($i=0;$i<$num;$i++)
+{
+	$row=mysql_fetch_array($res);
+
+	echo "<table border=1 cellpadding=2 cellspacing=0 width=100%>
+			<tr><td bgcolor=$color2><b>Title: </b>$row[2]</td></tr>
+			<tr><td bgcolor=$color1 >
+				<table border=0 cellpadding=5 cellspacing=0 width=100%>
+				<tr><td bgcolor=$color1  width=100%><b>Author:</b>&nbsp;$row[0]&nbsp;&nbsp;&nbsp;($row[3])<br>
+		$row[1]</td></tr></table></td>
+	</tr>";
+	
+	echo "</table><p><br>";
+	
+}
+?>
+<form method="post" action="forum_viewpost.php?post_id=<?php echo $post_id;?>" target="c">
+<input type="hidden" name="title" value="<?php echo $title;?>" size=50>
+<font size=5><h3><i> Reply here:</i></h3></font><br>
+<input type="hidden" name="dept" value="<?php echo $_REQUEST['dept'];?>">
+<textarea rows="10" cols="90" name="msg_body"></textarea>
+<br><br><br>
+<input type="submit" value="reply" name ="reply">
+</form>
+
+
+
+reports.php
+
+<?php
+session_start();
+$reporter=$_SESSION['username'];
+$user=$_POST['user'];
+$subject=$_POST['subject'];
+$reason=$_POST['reason'];
+$con=mysql_connect("localhost", "a310", "a310");
+$c=mysql_select_db("a310");
+$res=mysql_query("select user_id from users where user_id='$user'");
+$num=mysql_num_rows($res);
+if(empty($user) or empty($subject) or empty($reason))
+{
+	?>
+        <script>
+        alert("Enter all fields");
+        document.location="reports.html";
+        </script>
+        <?php
+}
+else
+{
+	if($num>0)
+	{
+		mysql_query("insert into reports values('$user','$reason','$reporter','','$subject')");
+		?>
+		<script>
+		alert("Successfully reported..");
+		document.location="reports.html";
+		</script>
+		<?php
+	}
+	else
+	{
+		?>
+		<script>
+		alert("user id doesnot exist");
+		document.location="reports.html";
+		</script>
+		<?php
+	}
+}
+?>
+
+
+
+view_profile.php
+
+<html>
+<body>
+<br>
+<font size=5 color="green">Your profile</font>
+<font color="#ffffff">
+<table align=left height=70 width=700 style='border-collapse: collapse' >
+<tr>
+        <td bgcolor="#6e6f7b"  width="120">User_id</td>
+        <td bgcolor="#6e6f7b"  width="120">First name</td>
+        <td bgcolor="#6e6f7b"  width="120">Last name</td>
+		<td bgcolor="#6e6f7b"  width="120">Address</td>
+		<td bgcolor="#6e6f7b"  width="120">State</td>
+		<td bgcolor="#6e6f7b"  width="120">Country</td>
+		<td bgcolor="#6e6f7b"  width="120">Zipcode</td>
+		<td bgcolor="#6e6f7b"  width="120">Branch</td>
+		<td bgcolor="#6e6f7b"  width="120">Sex</td>
+		<td bgcolor="#6e6f7b"  width="120">DOB</td>
+		</tr>
+</font>
+
+<?php
+$con=mysql_connect("localhost", "a310", "a310");
+$c=mysql_select_db("a310");
+session_start();
+$user=$_SESSION['username'];
+echo $user;
+$res=mysql_query("select * from users where user_id='$user'");
+$row=mysql_fetch_array($res);
+
+
+$check="checkbox";
+$color1="#ffffff";
+$color2="#eeeeee";
+$nowrap="nowrap";
+
+         echo "<tr>
+                  <td bgcolor=$color1 nowrap=$nowrap width=120>$row[0]</td> 
+                  <td bgcolor=$color1 nowrap=$nowrap width=120>$row[2]</td> 
+				  <td bgcolor=$color1 nowrap=$nowrap width=120>$row[3]</td> 
+				  <td bgcolor=$color1 nowrap=$nowrap width=120>$row[4]</td>
+				  <td bgcolor=$color1 nowrap=$nowrap width=120>$row[5]</td> 
+ 				  <td bgcolor=$color1 nowrap=$nowrap width=120>$row[6]</td>
+  				  <td bgcolor=$color1 nowrap=$nowrap width=120>$row[7]</td>
+				  <td bgcolor=$color1 nowrap=$nowrap width=120>$row[8]</td> 
+				  <td bgcolor=$color1 nowrap=$nowrap width=120>$row[9]</td> 
+				  <td bgcolor=$color1 nowrap=$nowrap width=120>$row[10]</td> 
+				  				  
+				  </tr> ";
+
+?>
+</table>
+<font size=5><div STYLE="POSITION:ABSOLUTE; LEFT:15; TOP:200">
+<a href="edit_profile.html">edit my profile</a><br><a href="home.html">back</a></div></font>
+
+
+</body>
+</html>
+
+
+
+edit_profile.php
+
+<?php
+$con=mysql_connect("localhost","a310","a310");
+$c=mysql_select_db("a310");
+session_start();
+$field=$_POST['field'];
+$field_value=$_POST['field_value'];
+$user=$_SESSION['username'];
+mysql_query("update users set $field='$field_value' where user_id='$user'");
+?>
+
+<script>
+alert("updated successfully");
+document.location="edit_profile.html";
+</script>
+
+
+logout.php
+
+<?php
+$con=mysql_connect("localhost", "a310", "a310");
+$c=mysql_select_db("a310");
+session_start();
+$username=$_SESSION['username'];
+
+mysql_query("UPDATE users SET status=0 WHERE user_id='$username'");
+
+session_destroy(); //Destroys all data registered to a session
+echo "YOU HAVE SUCCESSFULLY LOGGED OUT";
+mysql_query("delete from chat where sender_id='$username'");
+?><script>
+	alert("LOGGED OUT SUCCESSFULLY");
+	document.location="index.html";
+  </script>
+
+
+
+admin_view_users.php
+
+<html>
+<body>
+<br>
+<font size=5 color="green">List of users...</font><br><br>
+<font color="#ffffff">
+<table align=left height=70 width=700 style='border-collapse: collapse' >
+<tr>
+        <td bgcolor="#6e6f7b"  width="120">User_id</td>
+        <td bgcolor="#6e6f7b"  width="120">First name</td>
+        <td bgcolor="#6e6f7b"  width="120">Last name</td>
+		<td bgcolor="#6e6f7b"  width="120">State</td>
+		<td bgcolor="#6e6f7b"  width="120">Branch</td>
+		<td bgcolor="#6e6f7b"  width="120">Sex</td>
+		<td bgcolor="#6e6f7b"  width="120">DOB</td>
+		<td bgcolor="#6e6f7b"  width="120">Status</td>
+</tr>
+</font>
+
+<?php
+$con=mysql_connect("localhost", "a310", "a310");
+$c=mysql_select_db("a310");
+
+$res=mysql_query("select * from users");
+$num=mysql_num_rows($res);
+
+$check="checkbox";
+$color1="#ffffff";
+$color2="#eeeeee";
+$nowrap="nowrap";
+
+for($i=0;$i<$num;$i++)
+{
+        $row=mysql_fetch_array($res);
+	   if($i%2)
+	   {
+          echo "<tr>
+                  <td bgcolor=$color1 nowrap=$nowrap width=120>$row[0]</td> 
+                  <td bgcolor=$color1 nowrap=$nowrap width=120>$row[2]</td> 
+				  <td bgcolor=$color1 nowrap=$nowrap width=120>$row[3]</td> 
+				  <td bgcolor=$color1 nowrap=$nowrap width=120>$row[5]</td> 
+				  <td bgcolor=$color1 nowrap=$nowrap width=120>$row[8]</td> 
+				  <td bgcolor=$color1 nowrap=$nowrap width=120>$row[9]</td> 
+				  <td bgcolor=$color1 nowrap=$nowrap width=120>$row[10]</td> 
+				  <td bgcolor=$color1 nowrap=$nowrap width=120>$row[11]</td> 
+				  </tr> ";
+        }
+		else
+		{
+                 echo "<tr>
+                     <td bgcolor=$color2 nowrap=$nowrap width=120>$row[0]</td> 
+				     <td bgcolor=$color2 nowrap=$nowrap width=120>$row[2]</td> 
+					 <td bgcolor=$color2 nowrap=$nowrap width=120>$row[3]</td> 
+					 <td bgcolor=$color2 nowrap=$nowrap width=120>$row[5]</td> 
+					 <td bgcolor=$color2 nowrap=$nowrap width=120>$row[8]</td> 
+					 <td bgcolor=$color2 nowrap=$nowrap width=120>$row[9]</td> 
+					 <td bgcolor=$color2 nowrap=$nowrap width=120>$row[10]</td> 
+					 <td bgcolor=$color2 nowrap=$nowrap width=120>$row[11]</td>  
+				     </tr> ";
+
+        }
+
+}
+?>
+</table>
+</body>
+</html>
+
+
+
+admin_reports.php
+
+<html>
+<head>
+</head>
+<body>
+<br>
+
+<?php
+$con=mysql_connect("localhost", "a310", "a310");
+$c=mysql_select_db("a310");
+if(isset($_POST['submit'])) //checking if the form is submitted or not. 
+{ 
+
+	$box=$_REQUEST['box'];
+    echo "You have successfully deleted the selected reports!!! <br>";
+    foreach($box as $key=>$value)
+		$result=mysql_query("DELETE from reports where rid='$value' "); 
+}
+?>
+<form method="post" action="admin_reports.php" target="c">
+<font color="#ffffff">
+<table align=left height=70 width=700 style='border-collapse: collapse' >
+<tr>
+        <td bgcolor="#6e6f7b"  width="20"></td>
+	<td bgcolor="#6e6f7b"  width="20">From</td>
+        <td bgcolor="#6e6f7b" width="120">Reported on</td>
+	<td bgcolor="#6e6f7b" width="120">Subject</td>
+ </tr>
+</font>
+<?php
+
+session_start();
+$user=$_SESSION['username'];
+$res=mysql_query("select * from reports"); //changed by me
+
+echo "<p><P>";
+$num=mysql_num_rows($res);
+$check="checkbox";
+$color1="#ffffff";
+$color2="#eeeeee";
+$nowrap="nowrap";
+
+for($i=0;$i<$num;$i++)
+{
+        $row=mysql_fetch_array($res);
+	   if($i%2){
+          echo "<tr>
+                  <td bgcolor=$color1 nowrap=$nowrap width=10><input type=$check name=box[] value=$row[3]></td> 
+                  <td bgcolor=$color1 nowrap=$nowrap width=20>$row[2]</td>
+		  <td bgcolor=$color1 nowrap=$nowrap width=20>$row[0]</td> 
+                  <td bgcolor=$color1 nowrap=$nowrap width=120><a href=report_content.php?rid=$row[3]>$row[4]</a></td>
+		</tr>";
+        }else{
+                 echo "<tr>
+                        <td bgcolor=$color2 nowrap=$nowrap width=10><input type=$check name=box[] value=$row[3] ></td> 
+			<td bgcolor=$color2 nowrap=$nowrap width=20>$row[2]</td>
+                        <td bgcolor=$color2 nowrap=$nowrap width=20>$row[0]</td> 
+                        <td bgcolor=$color2 nowrap=$nowrap width=120><a href=report_content.php?rid=$row[3]>$row[4]</a></td> 
+                       </tr>";
+
+        }
+
+}
+
+?>
+
+</table>
+<DIV STYLE="POSITION:ABSOLUTE; LEFT:30; TOP:300">
+<input type="submit"  name="submit" value="delete">
+</div>
+</form>
+</body>
+</html>
+
+
+
+
+
+admin_ban_users.php
+
+<?php
+$con=mysql_connect("localhost", "a310", "a310");
+$c=mysql_select_db("a310");
+
+$user=$_POST['user'];
+$res=mysql_query("select user_id from users where user_id='$user'");
+$num=mysql_num_rows($res);
+if($num>0)	
+{
+	mysql_query("delete from users where user_id='$user'");
+	?>
+	<script>
+	alert("You have successfully deleted the user");
+	document.location="admin_ban_users.html";
+	</script>
+	<?php
+}
+else
+{
+	?>
+	<script>
+	alert("user_id doesnot exist..");
+	document.location="admin_ban_users.html";
+	</script>
+	<?php
+}
+?>
+
+
+register.php
+
+<?php
+$con=mysql_connect("localhost","a310","a310");
+mysql_select_db("a310");
+$userid=$_POST['user_id'];
+$password=$_POST['password'];
+$con_password=$_POST['con_password'];
+$fnam=$_POST['first_name'];
+$lnam=$_POST['last_name'];
+$coun=$_POST['country'];
+$zip=$_POST['zipcode'];
+$s_bran=$_POST['branch'];
+$addr=$_POST['address'];
+$state=$_POST['state'];
+$sex=$_POST['sex'];
+$year=$_POST['year'];
+$month=$_POST['month'];
+$day=$_POST['day'];
+$dob=$year.'-'.$month.'-'.$day;
+echo $sex;
+print("\n$sex $dob");
+if (strcmp($password,$con_password))
+{
+	?>
+	<script>
+	alert("Passwords does not match. Please try again. ");
+	document.location="register.html";
+	</script>
+	<?php
+}
+
+if(empty($userid) or empty($password) or empty($fnam) or empty($lnam) or empty($zip) or empty($s_bran))
+{
+	 ?>
+        <script>
+        alert("Please enter all fields ");
+        document.location="register.html";
+        </script>
+        <?php
+}
+
+
+$r=mysql_query("insert into users (user_id,password,fname,lname,zipcode,s_branch,address,country,state,sex,dob) values('$userid','$password','$fnam','$lnam',$zip,'$s_bran','$addr','$coun','$state','$sex','$dob')");
+if($r)
+{
+	?>
+	<script>
+	alert("successfully registered");
+	document.location="register_success.html";
+	</script>
+	<?php
+}
+else
+{
+	?>
+	<script>
+	alert("User id already exists. Please try another one.");
+	document.location="register.html";
+	</script>
+	<?php
+}
+
+mysql_close($con);
+?>
+
